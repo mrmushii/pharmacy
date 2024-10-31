@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PHARMACY MANAGEMENT SYSTEM</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="nav-logo border">
+          <div class="logo"><i class="fa-solid fa-capsules"></i>edicine</div>
+        </div>
+        <div class="nav-address border">
+          <p class="add1">Deliver to</p>
+          <div class="add-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="add2">Bangladesh</p>
+          </div>
+        </div>
+        <div class="nav-search">
+          <select class="search-select">
+            <option>All</option>
+          </select>
+          <input
+            type="text"
+            id="search-bar"
+            placeholder="Search medicine"
+            oninput="showSuggestions()"
+            class="search-box"
+          />
+          <div id="suggestions" class="suggestions-container"></div>
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="nav-lang border">
+          <div class="flag"></div>
+          <select id="language-select" class="lang" onchange="changeLanguage()">
+            <option
+              value="english.html"
+              style="color: black; text-decoration: none"
+            >
+              ENG
+            </option>
+
+            <option
+              value="Bangla.html"
+              style="color: black; text-decoration: none"
+            >
+              BNG
+            </option>
+          </select>
+        </div>
+        <div class="nav-sign-in border">
+          <p class="greet">Hello,sign in</p>
+          <select class="acc">
+            <option>Account & Lists</option>
+          </select>
+        </div>
+        <div class="nav-order border">
+          <p class="greet">Returns</p>
+          <p class="acc">& Orders</p>
+        </div>
+        <div class="nav-cart border">
+          <div class="cart-icon">
+            <i class="fa-solid fa-cart-plus"></i>
+          </div>
+          <p class="cart">Cart</p>
+        </div>
+      </div>
+      <div class="panel">
+        <a href="">Home</a>
+        <a href="">Medicines</a>
+        <a href="">Products</a>
+        <a href="equipment.html">Equipment</a>
+        <a href="doc.html">Doctors</a>
+      </div>
+    </header>
+    <main>
+      <div class="hero-section"></div>
+      <div class="panel2">
+        medicine : The Leading Online Pharmacy and Healthcare Platform of
+        Bangladesh.
+      </div>
+
+      <div class="shop">
+        <h1>OTC MEDICINES</h1>
+        <div class="shop-section">
+          <div class="box">
+            <div class="box-content">
+              <h2>FEVER</h2>
+              <div
+                class="box-img"
+                style="background-image: url('fever.png')"
+              ></div>
+              <p>See more</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-content">
+              <h2>HEADACHE</h2>
+              <div
+                class="box-img"
+                style="background-image: url('headache.png')"
+              ></div>
+              <p>See more</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-content">
+              <h2>DIARRHEA</h2>
+              <div
+                class="box-img"
+                style="background-image: url('diarrhea.png')"
+              ></div>
+              <p>See more</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-content">
+              <h2>ECZEMA</h2>
+              <div
+                class="box-img"
+                style="background-image: url('eczema.png')"
+              ></div>
+              <p>See more</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="foot-panel1">
+        <p>Back to top</p>
+      </div>
+      <div class="foot-panel2">
+        <ul>
+          <p>Get to Know Us</p>
+          <a>Careers</a>
+          <a>Blog</a>
+          <a>About Medicine</a>
+          <a>Investor Relations</a>
+          <a>Medicine Sciences</a>
+        </ul>
+        <ul>
+          <p>Make Money with Us</p>
+          <a>Sell on Medicine Business</a>
+          <a>Become an Affiliate</a>
+          <a>Your Products</a>
+          <a>Self-Publish with Us</a>
+          <a>Host an Medicine Hub</a>
+          <a>›See More Make Money with Us</a>
+        </ul>
+        <ul>
+          <p>Payment Products</p>
+          <a>Business Card</a>
+          <a>Shop with Points</a>
+          <a>Reload Your Balance</a>
+          <a>Currency Converter</a>
+        </ul>
+        <ul id="help">
+          <p>Let Us Help You</p>
+          <a>Medicine and COVID-19</a>
+          <a>Your Account</a>
+          <a>Your Orders</a>
+          <a>Shipping Rates & Policies</a>
+          <a>Returns & Replacements</a>
+          <a>Manage Your Content and Devices</a>
+          <a>Help</a>
+        </ul>
+      </div>
+      <div class="foot-panel3">
+        <div class="logo"><i class="fa-solid fa-capsules"></i>edicine</div>
+      </div>
+      <div class="foot-panel4">
+        <div class="pages">
+          <a>Conditions of Use</a>
+          <a>Privacy Notice</a>
+          <a>Consumer Health Data Privacy Disclosure</a>
+          <a>Your Ads Privacy Choices</a>
+        </div>
+        <div class="copyright">
+          <p>© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="english.js"></script>
+  </body>
+  <script>
+    function changeLanguage() {
+      const selectedLanguage = document.getElementById("language-select").value;
+      if (selectedLanguage) {
+        window.location.href = selectedLanguage;
+      }
+    }
+  </script>
+</html>

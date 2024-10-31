@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine</title>
+    <link rel="stylesheet" href="med.css">
+    <script defer src="med.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <main>
+        <div class="medicine-section">
+            <h1>Available Medicines</h1>
+            <div class="medicine-filter">
+                <label for="category">
+                    <h3>Category:</h3>
+                </label>
+                <select id="category" class="filter-category">
+                    <option value="all">All</option>
+                    <option value="antibiotics">Antibiotics</option>
+                    <option value="pain-relief">Pain Relief</option>
+                    <option value="vitamins">Vitamins</option>
+                    <option value="antiseptics">Antiseptics</option>
+                    <option value="dental-care">Dental Care</option>
+                </select>
+                <input type="text" placeholder="Search medicine" class="medicine-search" id="medicineSearch">
+                <button class="medicine-search-btn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+            </div>
+
+            <div class="medicine-grid" id="medicineGrid">
+                <!-- Medicine card with expiration date -->
+                <div class="medicine-card" data-category="pain-relief">
+                    <img src="medicine1.jpeg" alt="Medicine Image">
+                    <div class="medicine-details">
+                        <h3>Napa</h3>
+                        <p>500mg Tablets</p>
+                        <p class="price">10.00/=</p>
+                        <p class="expiry-date">Expiry Date: 2025-12-01</p>
+                        <!-- Rating system -->
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="medicine-card" data-category="antiseptics">
+                    <img src="medicine2.jpeg" alt="Medicine Image">
+                    <div class="medicine-details">
+                        <h3>Dettol</h3>
+                        <p>100 ml</p>
+                        <p class="price">50.00/=</p>
+                        <p class="expiry-date">Expiry Date: 2026-06-15</p>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="medicine-card" data-category="antibiotics">
+                    <img src="medicine3.jpeg" alt="Medicine Image">
+                    <div class="medicine-details">
+                        <h3>Ciprosin</h3>
+                        <p>750mg Capsules</p>
+                        <p class="price">20.00/=</p>
+                        <p class="expiry-date">Expiry Date: 2024-10-20</p>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="medicine-card" data-category="vitamins">
+                    <img src="medicine4.jpeg" alt="Medicine Image">
+                    <div class="medicine-details">
+                        <h3>Vitamins</h3>
+                        <p>40000mg Capsules</p>
+                        <p class="price">350.00/=</p>
+                        <p class="expiry-date">Expiry Date: 2025-03-10</p>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+
+                <div class="medicine-card" data-category="dental-care">
+                    <img src="medicine5.jpeg" alt="Medicine Image">
+                    <div class="medicine-details">
+                        <h3>Sensodyne</h3>
+                        <p>Toothpaste</p>
+                        <p class="price">350.00/=</p>
+                        <p class="expiry-date">Expiry Date: 2026-03-10</p>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+                <div class="medicine-card" data-category="vitamins">
+                    <img src="medicine6.jpeg" alt="Medicine Image">
+                    <div class="medicine-details">
+                        <h3>Ceevit</h3>
+                        <p>Vitamin C [Ascorbic Acid]</p>
+                        <p class="price">1.70/=</p>
+                        <p class="expiry-date">Expiry Date: 2025-06-10</p>
+                        <button class="add-to-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Add more medicine cards as needed -->
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
