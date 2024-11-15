@@ -12,6 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
@@ -87,7 +91,32 @@
       </div>
     </header>
     <main>
-      <div class="hero-section"></div>
+      <!-- <div class="hero-section"></div> -->
+
+      <div class="swiper mySwiper hero-section">
+        <div class="swiper-wrapper hero-section">
+          <div class="swiper-slide">
+            <img src="./insulin.jpeg" alt="" srcset="" />
+          </div>
+          <div class="swiper-slide hero-section">
+            <img
+              src="./medicine-pharmacy-concept-medical-bottles-tubes-and-tablets-vector.jpg"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="swiper-slide hero-section">
+            <img src="./ph-1.jpeg" alt="" srcset="" />
+          </div>
+          <div class="swiper-slide hero-section">
+            <img src="./pharmacy-template.webp" alt="" srcset="" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
       <div class="panel2">
         medicine : The Leading Online Pharmacy and Healthcare Platform of
         Bangladesh.
@@ -95,7 +124,9 @@
 
       <div class="shop">
         <h1>OTC MEDICINES</h1>
-        <div class="shop-section">
+
+        <div class="shop-section" id="shop-section"></div>
+        <!-- <div class="shop-section">
           <div class="box">
             <div class="box-content">
               <h2>FEVER</h2>
@@ -136,7 +167,7 @@
               <p>See more</p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </main>
     <footer>
@@ -195,6 +226,7 @@
       </div>
     </footer>
     <script type="module" src="english.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
   <script>
     function changeLanguage() {

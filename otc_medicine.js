@@ -1,36 +1,36 @@
 export const otcMedicines = [
   {
     id: 1,
-    name: "Ibuprofen",
+    name: "FEVER",
     category: "Pain Reliever",
     description: "Used to reduce fever and relieve minor aches and pain.",
     price: "$5.99",
-    image: "https://example.com/images/ibuprofen.jpg",
+    image: "fever.png",
   },
   {
     id: 2,
-    name: "Acetaminophen",
+    name: "HEADACHE",
     category: "Pain Reliever",
     description: "Relieves mild to moderate pain and reduces fever.",
     price: "$4.99",
-    image: "https://example.com/images/acetaminophen.jpg",
+    image: "headache.png",
   },
   {
     id: 3,
-    name: "Diphenhydramine",
+    name: "DIARRHEA",
     category: "Allergy Relief",
     description:
       "Used for relief of allergy symptoms, motion sickness, and sleep aid.",
     price: "$6.49",
-    image: "https://example.com/images/diphenhydramine.jpg",
+    image: "diarrhea.png",
   },
   {
     id: 4,
-    name: "Loratadine",
+    name: "ECZEMA",
     category: "Allergy Relief",
     description: "Non-drowsy antihistamine for relief of allergy symptoms.",
     price: "$7.99",
-    image: "https://example.com/images/loratadine.jpg",
+    image: "eczema.png",
   },
   {
     id: 5,
@@ -67,22 +67,22 @@ export const otcMedicines = [
     price: "$6.99",
     image: "https://example.com/images/pseudoephedrine.jpg",
   },
-  {
-    id: 9,
-    name: "Guaifenesin",
-    category: "Expectorant",
-    description:
-      "Used to help clear mucus from the airways, making it easier to cough up.",
-    price: "$4.49",
-    image: "https://example.com/images/guaifenesin.jpg",
-  },
-  {
-    id: 10,
-    name: "Loperamide",
-    category: "Anti-Diarrheal",
-    description:
-      "Used to control symptoms of diarrhea, including traveler's diarrhea.",
-    price: "$3.99",
-    image: "https://example.com/images/loperamide.jpg",
-  },
+  // {
+  //   id: 9,
+  //   name: "Guaifenesin",
+  //   category: "Expectorant",
+  //   description:
+  //     "Used to help clear mucus from the airways, making it easier to cough up.",
+  //   price: "$4.49",
+  //   image: "https://example.com/images/guaifenesin.jpg",
+  // },
+  // {
+  //   id: 10,
+  //   name: "Loperamide",
+  //   category: "Anti-Diarrheal",
+  //   description:
+  //     "Used to control symptoms of diarrhea, including traveler's diarrhea.",
+  //   price: "$3.99",
+  //   image: "https://example.com/images/loperamide.jpg",
+  // },
 ];
